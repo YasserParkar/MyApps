@@ -1,0 +1,21 @@
+h1{
+  color:blue
+}
+
+#appTable td{
+  border:solid thin grey;
+  padding:0 10px 5px 10px
+}
+
+#component{
+  border:solid thin grey;
+  padding:2px;
+  margin-right:5px;
+  width:30%;
+  float:left
+}
+
+#sixtext{
+  height:50px;
+  width:90%
+}

@@ -164,6 +164,12 @@ var Top = React.createClass({
     this.setState({comments:arr});
   },
 
+  add: function(){
+    var arr = this.state.comments;
+    arr.push('Default Text');
+    this.setState({comments:arr});
+  },
+
   each: function(text,i){
     return(<Six key={i} index={i} updateText={this.updateText} removeText={this.removeText}>{text}</Six>);
   },
@@ -172,6 +178,7 @@ var Top = React.createClass({
       return (
         <div>
           <h2>6. State / Refs/ Map/ Index/ Key/ Method as Prop</h2>
+          <button id="add" onClick={this.add}>Add</button><br/>
           {
             this.state.comments.map(this.each)
           }
